@@ -6,12 +6,12 @@ def modify_url(line):
     old_url = list[0]
     new_url = '\n'
 
-    if (old_url == 'http://google.com/'):
-	return new_url
+    if old_url.endswith('q=turn+off+the+lights'):
+        new_url = 'http://www.google.com/' + new_url
 
     # take the decision and modify the url if needed
     # do remember that the new_url should contain a '\n' at the end.
-    return 'http://google.com/\n'
+    return new_url
 
 while True:
     # the format of the line read from stdin is
