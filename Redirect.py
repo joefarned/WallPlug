@@ -5,6 +5,10 @@ def modify_url(line):
     # first element of the list is the URL
     old_url = list[0]
     new_url = '\n'
+
+    if (old_url == 'http://google.com/'):
+	return new_url
+
     # take the decision and modify the url if needed
     # do remember that the new_url should contain a '\n' at the end.
     return 'http://google.com/\n'
